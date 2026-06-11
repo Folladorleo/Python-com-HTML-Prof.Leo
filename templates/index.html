@@ -6,8 +6,23 @@
     <title>Python + HTML</title>
 </head>
 <body>
-    <div class = "card"> 
+    <br class = "card"> 
         <h1>Integração Python com HTML</h1>
+        <h2>Bem-vindo!</h2>
+        <p><strong>Nome:</strong> {{ nome }}</p>
+        <p><strong>Curso:</strong> {{ curso }}</p>
+        <button onclick="mostrarMensagem()">
+            Clique Aqui
+        </button>
+        <br></br>
+        <a href="/sobre">
+            <button>Ir para Sobre</button>
+        </a>
     </div>
+    <script>
+        function mostrarMensagem(){
+            alert("Parabéns! Seu site está funcionando.")
+        }
+    </script>
 </body>
 </html>
